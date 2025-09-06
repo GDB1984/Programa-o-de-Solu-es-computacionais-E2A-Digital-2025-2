@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Exercicio1_If_else {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+
+        int numero;
+        System.out.println("Digite o número : ");
+        numero = entrada.nextInt();
+        double metade = numero / 2.0;
+
+        if (numero >= 20) {
+            System.out.println("O número digitado é: "+ numero + " A metade do número é: "+metade);
+        }
+        System.out.println("Próxima instrução.");
+    }
+}
