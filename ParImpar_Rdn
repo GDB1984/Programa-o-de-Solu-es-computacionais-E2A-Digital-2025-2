@@ -1,0 +1,25 @@
+import java.util.Random;
+
+public class ParImpar_Rdn {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println("Digite um número (ou digite 0 para gerar um número aleatório): ");
+        int numero = scanner.nextInt();
+
+        // Se o usuário digitar 0, sorteamos um número de 1 a 100
+        if (numero == 0) {
+            numero = random.nextInt(100) + 1;
+            System.out.println("Número sorteado: " + numero);
+        }
+
+        if ((numero % 2) == 0) {
+            System.out.println(numero + " é par.");
+        } else {
+            System.out.println(numero + " é ímpar.");
+        }
+
+        scanner.close();
+    }
+}
