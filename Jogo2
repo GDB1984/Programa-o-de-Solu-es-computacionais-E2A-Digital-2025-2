@@ -1,0 +1,18 @@
+// Importar classe Scanner para o usuário inserir informações.
+import java.util.Scanner;
+
+public class Jogo {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+
+        int pontos;
+        System.out.println("Digite o número de pontos: ");
+        pontos = entrada.nextInt();
+
+        if (pontos >= 1000) {
+            System.out.println("Você passou para a fase 2!");
+        }
+        System.out.println("Próxima instrução.");
+    }
+}
